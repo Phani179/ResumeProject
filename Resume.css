@@ -1,0 +1,184 @@
+body{
+    font-family: Calibri, Helvetica, sans-serif;
+}
+
+.nav-styling{
+    height: 65vh;
+    width: 100%;
+    background-image : url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.horizontal-list{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.nav-bar li a {
+    color : white;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 5s;
+}
+
+.nav-bar li a:hover{
+    color : lightgray;
+    border-bottom: 1px solid black;
+}
+
+.name-styling{
+    padding-top: 20vh;
+    color: white;
+    text-align: center;
+}
+
+.social-icons li a i{
+    color: white;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition : color 0.3s;
+}
+
+.social-icons li a i:hover{
+    color: lightgray;
+    box-shadow: 0px 0px 5px 2px lightgray;
+}
+
+.leetcode-icon{
+    margin: -23%;
+    color: white;
+    font-size: 1.1em;  
+    padding: 5px;
+    border-radius: 50%;
+    transition : color 0.3s;
+}
+
+.leetcode-icon:hover{
+    color: lightgray;
+    box-shadow: 0px 0px 5px 2px lightgray;
+}
+
+.profile-photo{
+    position: relative;
+    height: 12rem;
+    width: 12rem;
+    margin :auto;
+    margin-top: -10vh;
+}
+
+.profile-photo img{
+    height: 100%;
+    width: 100%;
+    border : 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 2px lightgray;
+}
+
+.about p{
+    font-size: 1.1rem;
+}
+
+.highlight-text{
+    display: inline-block;
+}
+
+
+section:nth-child(2n)
+{
+    background-color: white;
+}
+
+section:nth-child(2n+1)
+{
+    background-color: #9e9b9b29;
+}
+
+
+.skills-title{
+    color:#2857a4;
+    font-size: 1.5rem;
+    padding-top: 2%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.skill-list{
+    padding: 0rem 0rem 2.5rem 0rem;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skill{
+    height: 2.2rem;
+    width: 13rem;
+    border-radius: 4rem;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.percentage {
+    margin-top: -7.8%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.percentage p{
+    padding-left: 3%;
+    padding-top: 5%;
+    font-weight: 500;
+    vertical-align: center;
+}
+
+.blue {
+    background-color: cadetblue;
+}
+
+.gold{
+    background-color:gold;
+}
+
+.cf-blue {
+    background-color:cornflowerblue;
+}
+
+.java-perc{
+    width: 80%;
+}
+
+.html-perc{
+    width: 90%;
+}
+
+.css-perc{
+    width: 75%;
+}
+
+.hibernate-perc{
+    width: 75%;
+}
+
+.spring-perc{
+    width: 70%;
+}
+
+.springboot-perc{
+    width: 60%;
+}

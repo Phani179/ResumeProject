@@ -189,26 +189,24 @@ section:nth-child(2n+1)
     position: relative;
     width: 80%;
     margin-left: 10%;
-    /* border : 2px solid black; */
+    border : 2px solid black;
 }
 
 .timeline-box:nth-child(even){
     text-align: right;                   
     position: relative;
-    margin: 2rem;
+    margin: 2.3vw;
     width: 40%;
-    height: 5rem;
-    /* border: 2px solid black; */
+    border: 2px solid black;
 }
 
 
 .timeline-box:nth-child(odd){
     position: relative;
-    margin: 2rem;
+    margin: 4.3vw;
     margin-left: 54%;
     width: 40%;
-    height: 5rem;
-    /* border: 2px solid black; */
+    border: 2px solid black;
 }
 
 .timeline-box:nth-child(even)::after{
@@ -218,7 +216,7 @@ section:nth-child(2n+1)
     width: 0.5rem;
     border-radius: 50%;
     top : 25%;
-    right: -2.45rem;
+    right: -5.7vw;
     background-color: red;
 }
 
@@ -229,7 +227,7 @@ section:nth-child(2n+1)
     width: 0.5rem;
     border-radius: 50%;
     top : 25%;
-    left: -1.85rem;
+    left: -3.8vw;
     background-color: red;
 }
 
@@ -238,7 +236,7 @@ section:nth-child(2n+1)
     height: 60%;
     width: 0;
     border: 1px dashed red;
-    top: 6rem;
+    top: 13vh;
     left: 50%;
 }
 

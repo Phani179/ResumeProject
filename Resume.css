@@ -97,10 +97,12 @@ body{
 section:nth-child(2n)
 {
     background-color: white;
+    /* height: 50%; */
 }
 
 section:nth-child(2n+1)
 {
+    /* height: 50%; */
     background-color: #9e9b9b29;
 }
 
@@ -111,6 +113,7 @@ section:nth-child(2n+1)
     padding-top: 2%;
     text-align: center;
     padding-bottom: 2rem;
+    margin-bottom: -2rem;
 }
 
 .skill-list{
@@ -182,26 +185,71 @@ section:nth-child(2n+1)
     width: 60%;
 }
 
-.education-list{
+.education-section{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    /* border : 2px solid black; */
 }
 
-.education-list div:nth-child(odd){
-    text-align: right;
-    padding-right: 3%;
-    margin: -0.8rem;
-    margin-right: 50%;
-    border-right: 3px dotted black;
+.timeline-box:nth-child(even){
+    text-align: right;                   
+    position: relative;
+    margin: 2rem;
+    width: 40%;
+    height: 5rem;
+    /* border: 2px solid black; */
 }
 
-.education-list div:nth-child(even){
-    text-align: left;
-    padding-left: 3%;
-    /* margin: 2rem; */
-    margin-left: 49.6%;
-    border-left: 3px dotted black;
+
+.timeline-box:nth-child(odd){
+    position: relative;
+    margin: 2rem;
+    margin-left: 54%;
+    width: 40%;
+    height: 5rem;
+    /* border: 2px solid black; */
+}
+
+.timeline-box:nth-child(even)::after{
+    position: absolute;
+    content: "";
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    top : 25%;
+    right: -2.45rem;
+    background-color: red;
+}
+
+.timeline-box:nth-child(odd)::after{
+    position: absolute;
+    content: "";
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    top : 25%;
+    left: -1.85rem;
+    background-color: red;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 60%;
+    width: 0;
+    border: 1px dashed red;
+    top: 6rem;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 50%;
+    transform: rotate(90deg);
 }
 
 .degree{
+    margin-top: 0%;
     color: blue;
 }
 
@@ -215,4 +263,39 @@ section:nth-child(2n+1)
 .education-list div span{
     font-size: 1rem;
     opacity: 0.6;
+}
+
+.contact-info-section{
+    padding-top: 1rem;
+    width: 100%;
+    background-image: linear-gradient(45deg, #2857a4, #403066);
+}
+
+.contact-info{
+    color: white;
+    width: 80%;
+}
+
+.contact-info-box1{
+    display: inline;
+    width: 30%;
+}
+
+.contact-info-box2{
+    display: inline-block;
+    width: 30%;
+}
+
+.title1{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.sub-title{
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.bottom{
+    padding-bottom: 2rem;
 }
